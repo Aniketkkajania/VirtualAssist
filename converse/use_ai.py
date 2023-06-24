@@ -1,5 +1,6 @@
 import openai
 import pyttsx3
+engine = pyttsx3.init()
 
 import converse.speak
 
@@ -11,7 +12,6 @@ messages = [
 
 
 def use_ai(message):
-    engine = pyttsx3.init()
     if message:
         if "Stop" in message or "stop" in message:
             print("Jarvis: Glad to help you!")
